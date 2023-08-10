@@ -44,14 +44,12 @@
 
 .banner__imagem {
     background: url('../img/banner.jpg') no-repeat center / cover;
-    height: calc(100vh - 72px);
     width: 100%;
 }
 
 .banner__titulo {
     color: #fdfdfd;
     font-family: Pacifico, cursive;
-    font-size: 5.0625rem;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -71,12 +69,10 @@
 .sobre__titulo {
     color: #8d0606;
     font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
 }
 
 .sobre__descricao {
     color: #595959;
-    font-size: 1.75rem;
     font-weight: 100;
 }
 
@@ -86,7 +82,6 @@
     background: #e5e5e5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .receita {
@@ -191,4 +186,125 @@
     text-transform: lowercase;
     color: #595959;
     font-size: 1.25rem;
+}
+
+
+/* SECTION RODAPÉ *********************************************************************************************************************************************/
+.rodape {
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
+
+
+/* RESPONSIVIDADE *********************************************************************************************************************************************/
+
+@media screen and (min-width: 0){
+    .cabecalho {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .banner__imagem {
+        height: calc(100vh - 51px);
+    }
+
+    .banner__titulo {
+        font-size: 3rem;
+    }
+
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+
+    .receita {
+        margin: 0 1rem 0 0;
+        width: 100%;
+    }
+
+    .pessoas {
+        flex-direction: column;
+    }
+
+    .pessoa {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and  (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .banner__imagem {
+        height: calc(100vh - 72px);
+        
+    }
+
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+
+    .sobre {
+        padding: 2.5rem;
+    }
+    
+    .sobre__titulo {
+        font-size: 3.1875rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.75rem;
+    }
+
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .receita {
+        margin: 0 2.5rem 0 0;
+        width: calc(33.33% - 2.5rem);
+    }
+
+    .pessoas {
+        flex-direction: row;
+    }
+
+    .pessoa {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+    
+    .receita {
+        margin: 0 5rem 0 0;
+        width: calc(25% - 5rem);
+    }
 }
