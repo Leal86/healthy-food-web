@@ -43,8 +43,9 @@
 }
 
 .banner__imagem {
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    height: calc(100vh - 72px);
     width: 100%;
-    height:calc(100vh - 72px);
 }
 
 .banner__titulo {
@@ -77,4 +78,117 @@
     color: #595959;
     font-size: 1.75rem;
     font-weight: 100;
+}
+
+
+/* SECTION RECEITAS *******************************************************************************************************************************************/
+.receitas {
+    background: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}
+
+.receita {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 5rem 0;
+    width: calc(25% - 5rem);
+}
+
+.receita__imagem {
+    
+}
+
+.receita__conteudo {
+    padding: 1rem;
+}
+
+.receita__titulo {
+    font-size: 1.4375rem;
+}
+
+.receita__descricao {
+    font-size: 1.1875rem;
+    text-align: justify;
+}
+
+.receita__botao {
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rem;
+    transition: all .1s ease-in-out;
+}
+
+.receita__botao:hover {
+    background: #620404;
+    cursor: pointer;
+}
+
+/* SECTION QUEM SOMOS *****************************************************************************************************************************************/
+.quem-somos {
+    text-align: center;
+    padding: 5rem;
+}
+
+.quem-somos__titulo {
+    margin-bottom: 1rem;
+    color:#8d0606;
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+}
+
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
+
+.pessoas {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa__imagem {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pessoa__imagem--roberta {
+    background-image: url('../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('../img/pessoas/andreia.jpg');
+}
+
+.pessoa__nome {
+    margin: 1rem 0;
+    font-family: Pacifico, cursive;
+    color: #8d0606;
+    font-size: 2rem;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    color: #595959;
+    font-size: 1.25rem;
 }
