@@ -36,7 +36,7 @@ frutasEfrutos/
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/frutas-e-frutos-landingpage.git
+   git clone https://github.com/Leal86/frutas-e-frutos-landingpage.git
    ```
 2. Abra o arquivo `index.html` em seu navegador.
 
